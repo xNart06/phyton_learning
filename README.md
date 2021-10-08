@@ -1,2 +1,3 @@
 # phyton
-phyton kodları
+phyton öğrenirken yazılan kodlar
+
