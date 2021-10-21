@@ -1,0 +1,32 @@
+# Değişkenlerimizi tanımladık
+sonuc = 0
+i = 1
+print("ilk sayıyı giriniz")
+sayi1 = int(input())
+print("ikinci sayııy giriniz")
+sayi2 = int(input())
+
+# Girilen 2 sayının negatif olduğu durumlarda oluşan hatayı çözmek için 2 sayının negatif olduğu durumu ayrı değerlendiriyoruz
+if sayi1 < 0 and sayi2 < 0:
+    
+    # sayi1 ve sayi2'yi eksili hali ile çarptık bu sayede artık program hata vermiyor
+    sayi1 = -sayi1
+    sayi2 = -sayi2
+    if sayi1 < sayi2:
+        for i in range(i, sayi2 + 1, 1):
+            sonuc = sonuc + sayi1
+    else:
+        for i in range(i, sayi1 + 1, 1):
+            sonuc = sonuc + sayi2
+else:
+    if sayi1 < sayi2:
+        
+        # Eğer sayi2 büyükse algoritma bu yolu izleyecek
+        for i in range(i, sayi2 + 1, 1):
+            sonuc = sonuc + sayi1
+    else:
+        
+        # Eğer sayi1 büyükse algoritma bu yolu izleyecek
+        for i in range(i, sayi1 + 1, 1):
+            sonuc = sonuc + sayi2
+print(sonuc)
